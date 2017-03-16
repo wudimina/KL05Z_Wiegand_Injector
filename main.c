@@ -189,8 +189,12 @@ int main(void)
     dbg_uart_init();
 
     PRINTF("\r\nRunning the myProject project.\r\n");
+
+	InitWiegandPort(eWiegandPort1, eGPIOPORTB8, eGPIOPORTB9);
+	InitWiegandPort(eWiegandPort2, eGPIOPORTB6, eGPIOPORTB7);
+	InitWiegandPort(eWiegandPort3, eGPIOPORTB10, eGPIOPORTB11);
+	InitWiegandPort(eWiegandPort4, eGPIOPORTB5, eGPIOPORTB13);
     InitWiegandProcess();
-    InitWiegandPort(eWiegandPort1, eGPIOPORTB8, eGPIOPORTB9);
 
     for (;;)                                         // Forever loop
     {
