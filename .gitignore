@@ -1,0 +1,9 @@
+*.o
+*.d
+*.mk
+*.launch
+*.htm
+*.a
+*.elf
+*.map
+makefile
